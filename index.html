@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Converter</title>
+    <link rel="stylesheet" href="caseConvStyle.css">
+</head>
+<body>
+    <div class="title">Case Converter</div>
+    <textarea rows="20" style="width:100%" id="text"></textarea>
+    <button type="button" id="upper-case" onclick="upper()">UPPER CASE</button>
+    <button type="button" id="lower-case" onclick="lower()">lower case</button>
+    <button type="button" id="proper-case" onclick="proper()">Proper Case</button>
+    <button type="button" id="sentence-case" onclick="sentence()">Sentence case</button>
+    <button type="button" id="save-text-file" onclick="download('text.txt', document.getElementById('text').value)">Save Text File</button>
+    <script src="caseConvScript.js"></script>
+</body>
+</html>
